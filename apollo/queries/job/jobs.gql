@@ -1,0 +1,8 @@
+query {
+  jobs{
+    title,
+    job_description,
+    company,
+    employment_length
+  }
+}
