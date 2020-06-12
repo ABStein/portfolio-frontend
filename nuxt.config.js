@@ -41,6 +41,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/apollo',
+    '@nuxtjs/markdownit',
   ],
   /*
   ** Axios module configuration
@@ -55,6 +56,16 @@ export default {
         httpEndpoint: 'http://localhost:1337/graphql'
       }
     }
+  },
+  markdownit: {
+    injected: true,
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
   },
   /*
   ** Build configuration

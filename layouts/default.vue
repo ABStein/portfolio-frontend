@@ -21,6 +21,7 @@ export default {
 
 
 <style>
+/* purge ignore */
 :root {
   /* font-size: 16px;
   font-family: 'Open Sans'; */
@@ -62,4 +63,5 @@ ul {
     padding: 1rem 2rem;
   }
 }
+/* purge ignore */
 </style>

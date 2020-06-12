@@ -61,7 +61,7 @@
       </li>
 
       <li class="nav-item">
-        <nuxt-link to="/about" class="nav-link">
+        <nuxt-link to="/experience" class="nav-link">
           <svg 
             aria-hidden="true"
             focusable="false"
@@ -163,6 +163,7 @@ export default {
 </script>
 
 <style>
+/* purge ignore */
 :root {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
@@ -189,11 +190,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
-
-/* main {
-  margin-left: 5rem;
-  padding: 1rem;
-} */
 
 .navbar {
   position: fixed;
@@ -238,6 +234,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .link-text {
+  font-size: 1rem;
+  font-weight: bold;
   display: none;
   margin-left: 1rem;
 }
@@ -363,10 +361,6 @@ ul.icons {
   list-style: none;
 }
 
-ul.icons li {
-  padding-left: 3px;
-}
-
 ul.icons a {
   text-decoration: none;
   width: 1.5rem;
@@ -377,4 +371,5 @@ ul.icons a {
 ul.icons a:hover {
   color: #ff7eee;
 }
+/* purge ignore */
 </style>

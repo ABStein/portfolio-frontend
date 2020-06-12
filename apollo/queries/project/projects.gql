@@ -1,6 +1,8 @@
 query {
   projects{
     project_title,
-    project_description
+    project_description,
+    repo,
+    live_site
   }
 }

@@ -1,38 +1,44 @@
 <template>
   <div>
-    <h1>Projects</h1>
+    <h1>Work History</h1>
     
-    <div class="project" v-for="project in projects" :key="project.id">
-      <h3>Project Title</h3>
-      <p>{{project.project_title}}</p>
+    <div class="job" v-for="job in jobs" :key="job.id">
+      <h3>Job title</h3>
+      <p>{{job.title}}</p>
       <br>
       <h3>Desciption</h3>
-      <p>{{project.project_description}}</p>
+      <p>{{job.job_description}}</p>
+      <br>
+      <h3>Company</h3>
+      <p>{{job.company}}</p>
+      <br>
+      <h3>Employment Length</h3>
+      <p>{{job.employment_length}}</p>
     </div>
   </div>
 </template>
 
 <script>
-import projectsQuery from "../apollo/queries/project/projects";
+import jobsQuery from '../apollo/queries/job/jobs'
 import axios from "axios";
 export default {
   data() {
     return {
-      projects: [],
+      jobs: [],
       query: ""
     };
   },
   apollo: {
-    projects: {
+    jobs: {
       prefetch: true,
-      query: projectsQuery
+      query: jobsQuery
     }
   },
   async created() {
     try {
-      this.projects.filter((project) => {
-        const res = project.includes(this.query)
-        this.projects = res
+      this.jobs.filter((job) => {
+        const res = job.includes(this.query)
+        this.jobs = res
       })
     } catch (err) {
       return err.stack;
@@ -55,7 +61,7 @@ export default {
 
 <style>
 /* purge ignore */
-.project {
+.job {
   color: #fff;
   padding: 1rem;
   border: 1px solid #df49a6;
