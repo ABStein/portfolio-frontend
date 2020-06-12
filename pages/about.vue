@@ -22,14 +22,7 @@ export default {
 </script>
 
 <style>
-/* purge ignore */
-.job {
-  color: #fff;
-  padding: 1rem;
-  border: 1px solid #df49a6;
-  border-radius: 5px;
-  margin: 1rem 0;
-  list-style: none;
+h1 {
+  text-align: center;
 }
-/* purge ignore */
 </style>

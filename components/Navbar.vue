@@ -172,23 +172,11 @@ export default {
   --transition-speed: 400ms;
 }
 
-body {
+nav {
   margin: 0;
   padding: 0;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-}
-
-body::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
 }
 
 .navbar {

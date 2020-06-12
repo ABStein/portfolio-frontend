@@ -55,12 +55,15 @@ export default {
 
 <style>
 /* purge ignore */
-.project {
+h1 {
   color: #fff;
-  padding: 1rem;
-  border: 1px solid #df49a6;
-  border-radius: 5px;
-  margin: 1rem 0;
+}
+
+.project {
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 15px;
+  margin: 4rem;
   list-style: none;
 }
 /* purge ignore */

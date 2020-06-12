@@ -3,7 +3,7 @@
     <h1>Work History</h1>
     
     <div class="job" v-for="job in jobs" :key="job.id">
-      <h3>Job title</h3>
+      <h3>Job Title</h3>
       <p>{{job.title}}</p>
       <br>
       <h3>Desciption</h3>
@@ -61,13 +61,17 @@ export default {
 
 <style>
 /* purge ignore */
-.job {
+h1 {
   color: #fff;
-  padding: 1rem;
-  border: 1px solid #df49a6;
-  border-radius: 5px;
-  margin: 1rem 0;
+}
+
+.job {
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 15px;
+  margin: 4rem;
   list-style: none;
+  /* opacity: 0.7; */
 }
 /* purge ignore */
 </style>

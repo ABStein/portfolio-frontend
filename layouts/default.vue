@@ -23,8 +23,6 @@ export default {
 <style>
 /* purge ignore */
 :root {
-  /* font-size: 16px;
-  font-family: 'Open Sans'; */
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -39,9 +37,22 @@ export default {
   padding: 0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  background: url('../assets/img/yellow-bokeh.jpg') no-repeat center center/cover;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
 }
 
 ul {
