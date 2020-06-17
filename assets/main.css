@@ -1,0 +1,42 @@
+.page-enter-active, .page-leave-active {
+  transition: opacity .4s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+body {
+  background-color: #EDF2F6;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #805ad5;
+}
+
+a {
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover {
+	color: #805ad5;
+}
+
+.nav-header {
+  /* background-image: linear-gradient(to right, #ff7eee, #df49a6, #ff7eee); */
+}
+
+.nav-header:hover {
+  /* transition: .5s;
+  background-position: right; */
+}

@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -33,6 +34,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/tailwindcss',
   ],
   /*
   ** Nuxt.js modules
@@ -42,6 +44,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/apollo',
     '@nuxtjs/markdownit',
+    '@nuxtjs/tailwindcss',
   ],
   /*
   ** Axios module configuration
@@ -66,6 +69,9 @@ export default {
       'markdown-it-div',
       'markdown-it-attrs'
     ]
+  },
+  tailwindcss: {
+    exposeConfig: true
   },
   /*
   ** Build configuration

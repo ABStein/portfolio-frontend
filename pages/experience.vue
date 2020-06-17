@@ -1,27 +1,18 @@
 <template>
-  <div>
-    <h1>Work History</h1>
-    
-    <div class="job" v-for="job in jobs" :key="job.id">
-      <h3>Job title</h3>
-      <p>{{job.title}}</p>
-      <br>
-      <h3>Desciption</h3>
-      <p>{{job.job_description}}</p>
-      <br>
-      <h3>Company</h3>
-      <p>{{job.company}}</p>
-      <br>
-      <h3>Employment Length</h3>
-      <p>{{job.employment_length}}</p>
-    </div>
+  <div class="container my-4 mx-auto px-4 md:px-12">
+    <span class="flex justify-center text-4xl">Experience</span>
+    <JobCard class="px-6 py-6" v-for="job in jobs" :key="job.id" :title="job.title" :job_description="job.job_description" :company="job.company" :employment_length="job.employment_length"/>
   </div>
 </template>
 
 <script>
+import JobCard from '../components/JobCard'
 import jobsQuery from '../apollo/queries/job/jobs'
 import axios from "axios";
 export default {
+  components: {
+    JobCard
+  },
   data() {
     return {
       jobs: [],
@@ -38,7 +29,9 @@ export default {
     try {
       this.jobs.filter((job) => {
         const res = job.includes(this.query)
-        this.jobs = res
+        console.log(res.data)
+        this.jobs = res.data
+        console.log(this.jobs)
       })
     } catch (err) {
       return err.stack;
@@ -59,15 +52,3 @@ export default {
 };
 </script>
 
-<style>
-/* purge ignore */
-.job {
-  color: #fff;
-  padding: 1rem;
-  border: 1px solid #df49a6;
-  border-radius: 5px;
-  margin: 1rem 0;
-  list-style: none;
-}
-/* purge ignore */
-</style>
