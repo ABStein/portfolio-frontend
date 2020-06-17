@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>About Me</h1>
+  <div class="container my-4 mx-auto px-4 md:px-12">
+    <span class="flex justify-center text-4xl">About Me</span>
   </div>
 </template>
 
@@ -20,16 +20,3 @@ export default {
   }
 };
 </script>
-
-<style>
-/* purge ignore */
-.job {
-  color: #fff;
-  padding: 1rem;
-  border: 1px solid #df49a6;
-  border-radius: 5px;
-  margin: 1rem 0;
-  list-style: none;
-}
-/* purge ignore */
-</style>

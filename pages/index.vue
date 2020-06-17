@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Welcome to Andrew</h1>
+  <div class="container my-4 mx-auto px-4 md:px-12">
+    <span class="flex justify-center text-4xl">Andrew</span>
   </div>
 </template>
 
@@ -21,6 +21,3 @@ export default {
 };
 </script>
 
-<style>
-
-</style>

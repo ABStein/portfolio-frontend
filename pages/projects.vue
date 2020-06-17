@@ -1,21 +1,18 @@
 <template>
-  <div>
-    <h1>Projects</h1>
-    
-    <div class="project" v-for="project in projects" :key="project.id">
-      <h3>Project Title</h3>
-      <p>{{project.project_title}}</p>
-      <br>
-      <h3>Desciption</h3>
-      <p>{{project.project_description}}</p>
-    </div>
+  <div class="container my-4 mx-auto px-4 md:px-12">
+    <span class="flex justify-center text-4xl">Projects</span>
+    <ProjectCard class="px-6 py-6" v-for="project in projects" :key="project.id" :project_title="project.project_title" :project_description="project.project_description" :repo="project.repo" :live_site="project.live_site"/>
   </div>
 </template>
 
 <script>
+import ProjectCard from '../components/ProjectCard'
 import projectsQuery from "../apollo/queries/project/projects";
 import axios from "axios";
 export default {
+  components: {
+    ProjectCard
+  },
   data() {
     return {
       projects: [],
@@ -52,16 +49,3 @@ export default {
   }
 };
 </script>
-
-<style>
-/* purge ignore */
-.project {
-  color: #fff;
-  padding: 1rem;
-  border: 1px solid #df49a6;
-  border-radius: 5px;
-  margin: 1rem 0;
-  list-style: none;
-}
-/* purge ignore */
-</style>
