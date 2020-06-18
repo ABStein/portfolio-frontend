@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-	color: #999;
+	color: #718096;
 	font-size: 0.9rem;
 	transition: .3s;
 }
