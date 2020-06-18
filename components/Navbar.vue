@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">  
+    <div :class="isOpen ? 'block' : 'hidden'" class="mx-auto px-2 pt-2 pb-4 sm:flex sm:p-0">  
       <nuxt-link to="/" class="nav-link block px-2 py-1 sm:ml-2">Home</nuxt-link>
       <nuxt-link to="/projects" class="nav-link block px-2 py-1 sm:ml-2">Projects</nuxt-link>
       <nuxt-link to="/experience" class="nav-link mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Experience</nuxt-link>
