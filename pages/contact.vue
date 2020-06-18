@@ -4,34 +4,22 @@
       <h1>{{ teaName }}</h1>
     </div>
     <div>
-      <form
-        name="vue-tea"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="vue-tea" />
-        <div class="tea">
-          <h2>Pick a Tea</h2>
-          <label
-            v-for="tea in teaNames"
-            :key="tea"
-            :class="{
-              'tea-label': true,
-              checked: tea === chosenTea
-            }"
-          >
-            <input
-              id="tea"
-              v-model="chosenTea"
-              name="tea"
-              type="radio"
-              :value="tea"
-            />
-            <span>{{ tea }}</span>
-          </label>
-        </div>
-        <button>Submit</button>
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" v-model="name">
+        <label for="name">Your Email:</label>
+        <input type="email" name="email" v-model="email">
+        <label for="role">Your Role</label>
+        <select name="role" id="">
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select>
+        <label for="message">Message:</label>
+        <input type="text" name="message" v-model="message">
+        <button type="submit" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded-full">
+          Submit
+        </button>
       </form>
     </div>
   </div>
@@ -39,29 +27,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      chosenTea: 'Earl Grey',
-      teaTypes: {
-        'Earl Grey': 'London',
-        'Irish Breakfast': 'Dublin',
-        Chai: 'Bombay',
-        Rose: 'Atlantic City',
-        Matcha: 'Tokyo',
-        Rooibos: 'Cape Town',
-        'Yerba Mate': 'Montreal',
-        Green: 'Oregon Mist'
-      }
-    }
-  },
-  computed: {
-    teaName() {
-      return `${this.teaTypes[this.chosenTea]} Fog`
-    },
-    teaNames() {
-      return Object.keys(this.teaTypes)
-    }
-  },
   head() {
     return {
       title: "Welcome to the life of Andrew",
