@@ -15,7 +15,6 @@
       <nuxt-link to="/" class="nav-link block px-2 py-1 sm:ml-2">Home</nuxt-link>
       <nuxt-link to="/projects" class="nav-link block px-2 py-1 sm:ml-2">Projects</nuxt-link>
       <nuxt-link to="/experience" class="nav-link mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Experience</nuxt-link>
-      <nuxt-link to="/about" class="nav-link mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">About</nuxt-link>
       <nuxt-link to="/contact" class="nav-link mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Contact</nuxt-link>
     </div>
 
