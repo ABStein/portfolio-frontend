@@ -1,11 +1,11 @@
 <template>
   <section>
-    <div class="login-content container my-4 mx-auto px-4 md:px-12">
+    <div class="conact-form container my-4 mx-auto px-4 md:px-12">
       <span class="flex justify-center text-4xl">Contact</span>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <form class="mt-2" name="contact" method="POST" data-netlify="true">
+      <form class="mt-2" name="contact" method="POST" action="/" data-netlify="true">
         <p class="mt-2">
           <label>Your Name: <input type="text" name="name" /></label>   
         </p>
