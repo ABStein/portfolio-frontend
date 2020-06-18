@@ -32,11 +32,12 @@ a:hover {
 	color: #805ad5;
 }
 
-.nav-header {
-  /* background-image: linear-gradient(to right, #ff7eee, #df49a6, #ff7eee); */
+.btn {
+  background-image: linear-gradient(to right, #805AD5, #553C9A, #805AD5);
+  transition: .5s;
+  background-size: 200%;
 }
 
-.nav-header:hover {
-  /* transition: .5s;
-  background-position: right; */
+.btn:hover {
+  background-position: right;
 }
