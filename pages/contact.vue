@@ -1,32 +1,67 @@
 <template>
-  <section>
-    <div class="conact-form container my-4 mx-auto px-4 md:px-12">
-      <span class="flex justify-center text-4xl">Contact</span>
+  <div class="container">
+    <div>
+      <h1>{{ teaName }}</h1>
     </div>
-
-    <div class="flex flex-col justify-center items-center">
-      <form class="mt-2" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="contact" value="contact-form">
-        <p class="mt-2">
-          <label>Your Name: <input type="text" name="name" /></label>   
-        </p>
-        <p class="mt-2">
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p class="mt-2">
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p class="mt-2">
-          <button type="submit">Send</button>
-        </p>
+    <div>
+      <form
+        name="vue-tea"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="vue-tea" />
+        <div class="tea">
+          <h2>Pick a Tea</h2>
+          <label
+            v-for="tea in teaNames"
+            :key="tea"
+            :class="{
+              'tea-label': true,
+              checked: tea === chosenTea
+            }"
+          >
+            <input
+              id="tea"
+              v-model="chosenTea"
+              name="tea"
+              type="radio"
+              :value="tea"
+            />
+            <span>{{ tea }}</span>
+          </label>
+        </div>
+        <button>Submit</button>
       </form>
     </div>
-    
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      chosenTea: 'Earl Grey',
+      teaTypes: {
+        'Earl Grey': 'London',
+        'Irish Breakfast': 'Dublin',
+        Chai: 'Bombay',
+        Rose: 'Atlantic City',
+        Matcha: 'Tokyo',
+        Rooibos: 'Cape Town',
+        'Yerba Mate': 'Montreal',
+        Green: 'Oregon Mist'
+      }
+    }
+  },
+  computed: {
+    teaName() {
+      return `${this.teaTypes[this.chosenTea]} Fog`
+    },
+    teaNames() {
+      return Object.keys(this.teaTypes)
+    }
+  },
   head() {
     return {
       title: "Welcome to the life of Andrew",
