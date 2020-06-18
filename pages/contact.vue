@@ -5,7 +5,7 @@
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <form class="mt-2" name="contact" method="POST" action="/" data-netlify="true">
+      <form class="mt-2" name="contact" method="POST" data-netlify="true">
         <p class="mt-2">
           <label>Your Name: <input type="text" name="name" /></label>   
         </p>
