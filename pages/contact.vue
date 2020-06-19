@@ -28,7 +28,7 @@
 
           <div class="flex justify-center mb-4">
             <button type="submit" class="btn mt-3 bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded-full">
-              Send
+              Let's Connect!
             </button>
           </div>
         </form>
