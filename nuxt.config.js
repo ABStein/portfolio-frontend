@@ -56,7 +56,7 @@ export default {
   apollo: {  
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://andrew-strapi-portfolio.herokuapp.com/graphql'
+        httpEndpoint: ''
       }
     }
   },
