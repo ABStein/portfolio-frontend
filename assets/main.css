@@ -23,14 +23,14 @@ body::-webkit-scrollbar-thumb {
   background: #805ad5;
 }
 
-a {
-	color: #718096;
+.nav-link {
+  color: #718096;
 	font-size: 0.9rem;
 	transition: .3s;
 }
 
-a:hover {
-	color: #805ad5;
+.nav-link:hover {
+  color: #805ad5;
 }
 
 .btn {

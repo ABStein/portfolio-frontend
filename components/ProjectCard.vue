@@ -5,9 +5,10 @@
       <div class="mt-1">
         <span class="text-gray-600 text-sm">{{ project_description }}</span>  
       </div>
-      <div class="flex flex-col mt-4">
-        <a :href="repo" class="text-left text-gray-600 font-semibold">View on Github</a>
-        <a :href="live_site" class="text-left text-gray-600 font-semibold">Live Site</a>
+
+      <div class="flex justify-center items-center mt-4 mb-4">
+        <a :href="repo" class="btn text-center text-white px-5 font-semibold rounded-full m-2">Github Repo</a>
+        <a :href="live_site" class="btn text-center text-white px-5 font-semibold rounded-full m-2">Live Site</a>
       </div>
     </div>
   </div>
