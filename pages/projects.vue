@@ -7,33 +7,21 @@
 
 <script>
 import ProjectCard from '../components/ProjectCard'
-import projectsQuery from "../apollo/queries/project/projects";
-import axios from "axios";
 export default {
   components: {
     ProjectCard
   },
   data() {
     return {
-      projects: [],
-      query: ""
+      projects: [
+        {
+          project_title: "Weather App",
+          project_description: "Gives you the current weather at your location.\n\nTechnologies used\n- Express.JS\n- WeatherStack API\n- Darksky API",
+          repo: "https://github.com/ABStein/weather-web-server",
+          live_site: "https://stein-weather-app.herokuapp.com/",
+        }
+      ],
     };
-  },
-  apollo: {
-    projects: {
-      prefetch: true,
-      query: projectsQuery
-    }
-  },
-  async created() {
-    try {
-      this.projects.filter((project) => {
-        const res = project.includes(this.query)
-        this.projects = res
-      })
-    } catch (err) {
-      return err.stack;
-    }
   },
   head() {
     return {
