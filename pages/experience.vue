@@ -13,25 +13,25 @@ export default {
   },
   data() {
     return {
-      jobs: [
-        {
-          title: "QA Automation Engineer",
-          job_description: "Worked as the best QA Automation Engineer in the world using ruby with capybara/Airborne for UI and API testing.",
-          company: "Dialogtech",
-          employment_length: "February 2018 - December 2018"
-        },
-        {
-          title: "Junior Backend Engineer",
-          job_description: "Worked with super fun technology like AWS lambda, EC2, Cloudwatch, API Gateway. Mainly coding in Node.js using frameworks such as ExpressJS for routing and API creation, and the serverless framework to deploy those APIs in AWS. For databases, I used both NoSQL (DynamoDB) and MySQL (RDS).",
-          company: "Dialogtech",
-          employment_length: "January 2019 - December 2019"
-        },
+      jobs: [      
         {
           title: "Web Engineer",
           job_description: "I worked on WordPress plugin and theme development. I also worked on APIs using PHP and Laravel, as well as creating frontend functionality with React to better support the company's marketing goals",
           company: "Sprout Social",
           employment_length: "January 2019 - Present"
         },
+        {
+          title: "Junior Backend Engineer",
+          job_description: "Worked with super fun technology like AWS lambda, EC2, Cloudwatch, API Gateway. Mainly coding in Node.js using frameworks such as ExpressJS for routing and API creation, and the serverless framework to deploy those APIs in AWS. For databases, I used both NoSQL (DynamoDB) and MySQL (RDS).",
+          company: "Dialogtech",
+          employment_length: "January 2019 - December 2019"
+        },          
+        {
+          title: "QA Automation Engineer",
+          job_description: "Worked as the best QA Automation Engineer in the world using ruby with capybara/Airborne for UI and API testing.",
+          company: "Dialogtech",
+          employment_length: "February 2018 - December 2018"
+        }
       ]
     };
   },
