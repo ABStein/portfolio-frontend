@@ -10,9 +10,9 @@
           <span class="text-xl px-2 py-1 underline text-gray-600">Social Media</span>
         </div>
         <div class="flex flex-row">
-          <a href="https://github.com/ABStein" class="text-xl px-2 py-1 text-gray-600 fab fa-github-alt"></a>
-          <a href="https://medium.com/@ABStein" class="text-xl px-2 py-1 text-gray-600 fab fa-medium"></a>
-          <a href="https://www.linkedin.com/in/andrew-stein-755b8b11a" class="text-xl px-2 py-1 text-gray-600 fab fa-linkedin"></a>
+          <a href="https://github.com/ABStein" class="nav-link text-xl px-2 py-1 text-gray-600 fab fa-github-alt"></a>
+          <a href="https://medium.com/@ABStein" class="nav-link text-xl px-2 py-1 text-gray-600 fab fa-medium"></a>
+          <a href="https://www.linkedin.com/in/andrew-stein-755b8b11a" class="nav-link text-xl px-2 py-1 text-gray-600 fab fa-linkedin"></a>
         </div>
       </div>      
     </div>
