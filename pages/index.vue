@@ -9,7 +9,7 @@
           is passionate about creating amazing experiences and
           all things on the web 👨‍💻
       </div>
-      <a class="nav-link text-gray-600 text-xl" href="https://drive.google.com/file/d/1Eyzk_0yh3L02jvqIwty2K03oAK09CcPD/view?usp=sharing">Checkout My Resume</a>
+      <a class="nav-link text-gray-600 text-xl underline mt-12 mb-4" href="https://drive.google.com/file/d/1Eyzk_0yh3L02jvqIwty2K03oAK09CcPD/view?usp=sharing">Checkout My Resume</a>
     </div>
     <div>
       <img src="../assets/img/headshot.jpg" alt="">
