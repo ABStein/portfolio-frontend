@@ -7,7 +7,7 @@
       </div>
 
       <div class="flex justify-center items-center mt-4 mb-4">
-        <a :href="repo" class="btn text-center text-white px-5 font-semibold rounded-full m-2">Github Repo</a>
+        <a :href="repo" class="btn text-center text-white px-5 font-semibold rounded-full m-2">Code</a>
         <a :href="live_site" class="btn text-center text-white px-5 font-semibold rounded-full m-2">Live Site</a>
       </div>
     </div>
