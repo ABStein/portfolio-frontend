@@ -1,3 +1,5 @@
+import { plugins } from "./tailwind.config";
+import { join } from 'path'
 
 export default {
   mode: 'universal',
@@ -32,13 +34,15 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: {
+    tailwindcss: join(__dirname, 'tailwind.config.js'),
+  },
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
   ],
   /*
   ** Nuxt.js modules
@@ -55,9 +59,9 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    
+
   },
-  apollo: {  
+  apollo: {
     clientConfigs: {
       default: {
         httpEndpoint: ''
@@ -75,12 +79,27 @@ export default {
     ]
   },
   tailwindcss: {
-    exposeConfig: true
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: '~/tailwind.config.js',
+    exposeConfig: true,
+    config: {},
+    injectPosition: 0,
+    viewer: true,
   },
   /*
   ** Build configuration
   */
   build: {
+    postcss: {
+      postcssOptions: {
+        order: ["tailwindcss/nesting", "tailwindcss", "autoprefixer"],
+        plugins: {
+          "postcss-nested": false,
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
     /*
     ** You can extend webpack config here
     */
