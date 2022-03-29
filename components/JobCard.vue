@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-white rounded-lg p-6 m-6 overflow-hidden shadow-lg">
-    <div class="px-4 py-6">
-      <h4 class="font-semibold text-lg leading-tight truncate">{{ title }}</h4>
-      <div class="mt-1">
-        <span class="text-gray-600 text-sm">{{ job_description }}</span>  
+  <div class="rounded-2xl overflow-hidden drop-shadow-2xl border">
+    <div class="px-4">
+      <div class="mt-3">
+        <h3 class="my-2 font-semibold text-lg">{{ title }}</h3>
+        <p class="my-2 text-sm">{{ job_description }}</p>
       </div>
-      <div class="mt-4">
-        <span class="text-purple-600 font-semibold">{{ company }}</span>
-        <span class="text-gray-600 text-sm"> {{ employment_length }} </span>
+      <div class="mt-3">
+        <p class="my-2 text-xs">{{ company }}</p>
+        <p class="my-1 text-xs font-bold italic text-primary">{{ employment_length }}</p>
       </div>
     </div>
   </div>

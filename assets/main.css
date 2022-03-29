@@ -6,8 +6,7 @@
 }
 
 body {
-  background-color: #EDF2F6;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Heebo', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -24,12 +23,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-link {
-  color: #718096;
 	transition: .3s;
-}
-
-.nav-link:hover {
-  color: #805ad5;
 }
 
 .btn {

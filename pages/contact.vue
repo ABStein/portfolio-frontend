@@ -8,7 +8,7 @@
         <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
         </span>
       </div>
-      
+
       <span class="flex justify-center text-4xl">Contact</span>
       <div class="mx-auto w-full max-w-xs">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mt-4 mb-4" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
@@ -31,11 +31,11 @@
             <label class="form-label block text-gray-600 text-sm font-bold mb-2" for="message">
               Message:
             </label>
-            <textarea class="form-field shadow appearance-none border rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message"></textarea>            
+            <textarea class="form-field shadow appearance-none border rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message"></textarea>
           </div>
 
           <div class="flex justify-center mb-4">
-            <button @click="pushedButton = true" type="submit" class="btn mt-3 text-white font-bold py-2 px-4 rounded-full">
+            <button @click="pushedButton = true" type="submit" class="nav-link bg-primary hover:bg-primary_opacity text-white py-2 px-4 rounded text-center lg:w-64 w-48 self-center lg:self-auto">
               Let's Connect!
             </button>
           </div>

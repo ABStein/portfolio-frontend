@@ -16,7 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@1,400&display=swap' },
+      { rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap' },
     ],
   },
   /*
@@ -39,6 +39,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
   ],
   /*
   ** Nuxt.js modules
@@ -55,9 +56,9 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    
+
   },
-  apollo: {  
+  apollo: {
     clientConfigs: {
       default: {
         httpEndpoint: ''
@@ -81,6 +82,12 @@ export default {
   ** Build configuration
   */
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
     /*
     ** You can extend webpack config here
     */
